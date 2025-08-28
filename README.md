@@ -1,21 +1,19 @@
-Here is a complete, ready‑to‑paste README.md for the Attendance Manager Android app, including an embedded screenshot and sections for installation, usage, permissions, and export details.[1][2]
 
 # Attendance Manager
 
 A lightweight Android app to record class attendance, toggle present/absent per roll number, and export results to an Excel‑readable spreadsheet.[2]
 
 ## Overview
-This project focuses on fast, offline attendance capture for a single class session with minimal setup and one‑tap export of the marked list.[2]
-The README structure follows widely recommended guidance so new contributors can quickly understand goals, setup, and contribution flow.[3][1]
+This project focuses on fast, offline attendance capture for a single class session with minimal setup and one‑tap export of the marked list.
+The README structure follows widely recommended guidance so new contributors can quickly understand goals, setup, and contribution flow.
 
 ## Screenshots
-Main screens: splash, setup (class/date/students), marking list, and sample exported sheet.[2]
+Main screens: splash, setup (class/date/students), marking list, and sample exported sheet.
 
-```md
-![Attendance Manager – Screens](https://raw.githubusercontent.com/dhruv-lakhe/attendancesheetgeneratorapp/refs/heads/master/screens.png)
-```
+![Screenshot 1](screens.jpg)
 
-The image uses the standard Markdown image syntax that renders on GitHub.[4][1]
+
+The image uses the standard Markdown image syntax that renders on GitHub.
 
 ## Features
 - Set class name, pick the attendance date, and define the student count before marking.[2]
@@ -72,27 +70,3 @@ This structure mirrors standard Android templates so onboarding stays straightfo
 - Per‑student history views and monthly summary exports for attendance analytics.[1]
 - Optional cloud backup while retaining fully offline marking.[1]
 
-## Contributing
-Contributions are welcome: open issues for bugs/features, follow clear commit messages, and include README or in‑app help updates when behavior changes.[3][1]
-Before submitting a pull request, run a local build and add any necessary notes or tests to keep maintenance smooth.[3][1]
-
-## License
-Add a license file (e.g., MIT or Apache‑2.0) so distribution and contribution terms are explicit.[3][1]
-
-## Acknowledgments
-README layout and guidance draw from professional README references and community best practices.[3][1]
-Markdown image embedding and formatting recommendations follow widely used documentation for README rendering.[4][1]
-
-[1](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide/)
-[2](https://raw.githubusercontent.com/dhruv-lakhe/attendancesheetgeneratorapp/refs/heads/master/screens.png)
-[3](https://www.makeareadme.com)
-[4](https://www.digitalocean.com/community/tutorials/markdown-markdown-images)
-[5](https://developer.android.com/about/versions/11/privacy/storage)
-[6](https://sentry.io/answers/storage-permissions-in-android-13/)
-[7](https://github.com/blocoio/android-template/blob/master/README.md)
-[8](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
-[9](https://github.com/banesullivan/README)
-[10](https://www.reddit.com/r/learnprogramming/comments/vxfku6/how_to_write_a_readme/)
-[11](https://readme.so)
-[12](https://www.youtube.com/watch?v=rCt9DatF63I)
-[13](https://josuedla.github.io/readme-creator/)
