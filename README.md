@@ -10,7 +10,7 @@ The README structure follows widely recommended guidance so new contributors can
 ## Screenshots
 Main screens: splash, setup (class/date/students), marking list, and sample exported sheet.
 
-![Screenshot 1](./screens.jpg)
+![Screenshot 1](./screens.png)
 
 
 The image uses the standard Markdown image syntax that renders on GitHub.
