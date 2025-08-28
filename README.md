@@ -1,74 +1,98 @@
+Here is a complete, ready‑to‑paste README.md for the Attendance Manager Android app, including an embedded screenshot and sections for installation, usage, permissions, and export details.[1][2]
+
+# Attendance Manager
+
+A lightweight Android app to record class attendance, toggle present/absent per roll number, and export results to an Excel‑readable spreadsheet.[2]
 
 ## Overview
-Attendance Manager is a simple Android app to record daily presence for a class, toggle present/absent per roll number, and save results to a local spreadsheet.[1]
-The README follows widely recommended sections so new contributors quickly understand the what, why, and how of the project.[2][3]
+This project focuses on fast, offline attendance capture for a single class session with minimal setup and one‑tap export of the marked list.[2]
+The README structure follows widely recommended guidance so new contributors can quickly understand goals, setup, and contribution flow.[3][1]
 
 ## Screenshots
-The following composite shows the splash, configuration, marking screen, and an exported spreadsheet preview.[1]
-  
+Main screens: splash, setup (class/date/students), marking list, and sample exported sheet.[2]
+
+```md
+![Attendance Manager – Screens](https://raw.githubusercontent.com/dhruv-lakhe/attendancesheetgeneratorapp/refs/heads/master/screens.png)
+```
+
+The image uses the standard Markdown image syntax that renders on GitHub.[4][1]
 
 ## Features
-- Create or select a class and date, then mark each roll number as Present or Absent with quick radio toggles.[1]
-- Persist attendance locally and export to a .xls‑style spreadsheet for sharing or archival.[1]
-- Simple, clean UI with a floating action button for actions like save/export.[1]
-
-## Tech stack
-- Android app built with native components and standard Material UI patterns.[1]
-- Local storage for attendance data and on‑device spreadsheet file generation.[1]
-- Designed for quick offline use and minimal setup for instructors.[1]
+- Set class name, pick the attendance date, and define the student count before marking.[2]
+- Toggle Present/Absent for each roll number via simple radio controls in a clean list UI.[2]
+- Save the session locally and export an .xls‑style spreadsheet for sharing or archival.[2]
+- Floating action button provides quick access to actions such as Save or Export.[2]
 
 ## Requirements
-- Android Studio (latest stable) and an Android device or emulator.[3]
-- Android SDK configured and Gradle wrapper included in the project.[3]
-- File storage access enabled to write the exported spreadsheet.[1]
+- Android Studio with Gradle wrapper and an Android device or emulator for running the app.[1]
+- Storage/media access on the device to allow writing the exported spreadsheet file.[5]
 
-## Getting started
-- Clone the repository into a local workspace and open it in Android Studio.[3]
-- Let Gradle sync; then build and run the app on a device or emulator.[3]
-- On first run, grant storage permission when prompted to enable exports.[1]
+## Installation
+- Clone the repository locally and open the project in Android Studio.[1]
+- Allow Gradle to sync dependencies, then build and run on a device or emulator.[1]
+- Command‑line build is also possible using the Gradle wrapper.[1]
 
 ```bash
-# Build & run (from Android Studio or Gradle)
 ./gradlew assembleDebug
 ```
 
+Use this command from the project root to produce a debug build.[1]
+
 ## Usage
-- Enter number of students, class name, and pick the attendance date from the inline date selectors.[1]
-- Tap each roll number to set Present/Absent, then press Save to persist the session.[1]
-- Use the action menu to export the sheet; a .xls file with headers like Student, Attendance, Date, and Class is generated.[1]
+- On first launch, enter the number of students, provide a class name, and select the date of attendance.[2]
+- Mark each roll number as Present or Absent, then tap Save to persist the session state.[2]
+- Use the action menu to Export; an Excel‑readable spreadsheet with headers is generated on device storage.[2]
 
 ## Permissions
-- The app requests storage permission to create the exported spreadsheet on device storage, which must be granted for saving to succeed.[1]
-- If permission is denied, an in‑app notice appears and export will be blocked until permission is granted.[1]
+- Export requires storage/media permission so the spreadsheet can be written to shared storage.[5][2]
+- On modern Android versions, request only the minimum media permissions required by the export flow as platform behavior evolved across Android 11 and 13.[6][5]
+- If permission is denied, an in‑app notice appears and export will be blocked until permission is granted via the system dialog or settings.[5][2]
 
 ## Export format
-- Exports include a header row and a row per roll number with status values like Present/Absent.[1]
-- Files are written in an Excel‑readable .xls format for easy opening and sharing.[1]
+- The exported sheet includes a header row and one row per roll number with Present/Absent status, date, and class name.[2]
+- Files are written in an Excel‑readable .xls format that opens in common spreadsheet tools.[2]
 
 ## Project structure
-A conventional Android project layout is recommended so newcomers can navigate modules, UI, and data layers effectively.[4][3]
-Consider separating UI, domain, and data concerns to keep features like marking and exporting loosely coupled.[4]
+A conventional Android layout helps contributors discover UI, data, and build files quickly.[7]
 
 ```
 app/
   src/
     main/
-      java/...        # activities/fragments/viewmodels [7]
-      res/...         # layouts, drawables, strings [7]
-  build.gradle        # app configuration [7]
-gradle/               # gradle wrapper and scripts [7]
+      java/...        # Activities / Fragments / ViewModels
+      res/...         # Layouts, drawables, strings
+  build.gradle
+gradle/
 ```
 
-## Contributing
-Keep pull requests focused, include clear descriptions, and update the README and in‑app help when adding or changing features.[3]
-Adopt consistent code style and add tests where feasible to sustain quality over time.[4]
+This structure mirrors standard Android templates so onboarding stays straightforward.[7]
 
 ## Roadmap
-- Class roster import (CSV) and named‑student mapping to roll numbers.[3]
-- Multi‑class management, per‑student history, and monthly summary exports.[3]
-- Optional cloud backup of attendance sheets while retaining offline support.[3]
+- Roster import (CSV) with named student mapping to roll numbers.[1]
+- Per‑student history views and monthly summary exports for attendance analytics.[1]
+- Optional cloud backup while retaining fully offline marking.[1]
+
+## Contributing
+Contributions are welcome: open issues for bugs/features, follow clear commit messages, and include README or in‑app help updates when behavior changes.[3][1]
+Before submitting a pull request, run a local build and add any necessary notes or tests to keep maintenance smooth.[3][1]
+
+## License
+Add a license file (e.g., MIT or Apache‑2.0) so distribution and contribution terms are explicit.[3][1]
 
 ## Acknowledgments
-This README uses structure and guidance from professional README best‑practice resources to stay clear and actionable.[5][2][3]
-Badge ideas and status indicators can be added later using Shields‑style badges if desired.[6][7]
+README layout and guidance draw from professional README references and community best practices.[3][1]
+Markdown image embedding and formatting recommendations follow widely used documentation for README rendering.[4][1]
 
+[1](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide/)
+[2](https://raw.githubusercontent.com/dhruv-lakhe/attendancesheetgeneratorapp/refs/heads/master/screens.png)
+[3](https://www.makeareadme.com)
+[4](https://www.digitalocean.com/community/tutorials/markdown-markdown-images)
+[5](https://developer.android.com/about/versions/11/privacy/storage)
+[6](https://sentry.io/answers/storage-permissions-in-android-13/)
+[7](https://github.com/blocoio/android-template/blob/master/README.md)
+[8](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+[9](https://github.com/banesullivan/README)
+[10](https://www.reddit.com/r/learnprogramming/comments/vxfku6/how_to_write_a_readme/)
+[11](https://readme.so)
+[12](https://www.youtube.com/watch?v=rCt9DatF63I)
+[13](https://josuedla.github.io/readme-creator/)
