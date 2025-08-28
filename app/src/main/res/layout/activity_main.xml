@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:layout_marginTop="50dp"
+    android:background="@color/design_default_color_background"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/numOfStudentsEditText"
+        android:drawableLeft="@drawable/person"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter number of students" />
+    <EditText
+        android:drawableLeft="@drawable/classname"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter class name"
+        android:id="@+id/class_et"/>
+    <DatePicker
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+    <Button
+        android:id="@+id/bt1"
+        android:onClick="submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="submit"/>
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" >
+    </ScrollView>
+
+    <Button
+        android:id="@+id/saveFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Click to save "
+        android:text="Save"
+        android:onClick="save"/>
+</LinearLayout>
+
